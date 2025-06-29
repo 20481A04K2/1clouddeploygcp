@@ -13,29 +13,26 @@ serialPipeline:
     - targetId: prod
       profiles: [prod]
 ---
-
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: dev
 description: Cloud Run dev environment
 run:
-  location: asia-south1
+  location: projects/mythic-beanbag-463309-e9/locations/asia-south1
 ---
-
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: qa
 description: Cloud Run QA environment
 run:
-  location: asia-south1
+  location: projects/mythic-beanbag-463309-e9/locations/asia-south1
 ---
-
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: prod
 description: Cloud Run prod environment
 run:
-  location: asia-south1
+  location: projects/mythic-beanbag-463309-e9/locations/asia-south1
